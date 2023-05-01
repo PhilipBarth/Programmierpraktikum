@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane fx:id="borderPn" style="-fx-background-color: lightgrey" minHeight="725" minWidth="550.0"
+            xmlns="http://javafx.com/javafx/11"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SettingController">
+    <center>
+        <VBox alignment="TOP_CENTER" prefHeight="723.0" prefWidth="644.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets/>
+            </BorderPane.margin>
+            <Label text="Bitte waehle die Einstellungen des Spiels" VBox.vgrow="SOMETIMES">
+                <font>
+                    <Font size="28.0"/>
+                </font>
+                <VBox.margin>
+                    <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+                </VBox.margin>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="494.0" style="-fx-border-color: black;"
+                  VBox.vgrow="SOMETIMES">
+                <VBox.margin>
+                    <Insets bottom="10.0" left="25.0" right="25.0" top="10.0"/>
+                </VBox.margin>
+                <Label text="Anzahl Spalten" VBox.vgrow="SOMETIMES">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="25.0" right="25.0" top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <Slider fx:id="sliderCols" blockIncrement="1.0" majorTickUnit="1.0"
+                        minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true"
+                        value="10.0" VBox.vgrow="SOMETIMES">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="25.0" right="25.0" top="10.0"/>
+                    </VBox.margin>
+                </Slider>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: black;"
+                  VBox.vgrow="SOMETIMES">
+                <VBox.margin>
+                    <Insets bottom="10.0" left="25.0" right="25.0" top="10.0"/>
+                </VBox.margin>
+                <Label text="Anzahl Zeilen" VBox.vgrow="SOMETIMES">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" top="10.0"/>
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="25.0" right="25.0" top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <Slider fx:id="sliderRows" blockIncrement="1.0" majorTickUnit="1.0"
+                        minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true"
+                        VBox.vgrow="SOMETIMES">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="25.0" right="25.0" top="10.0"/>
+                    </VBox.margin>
+                </Slider>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: black;"
+                  VBox.vgrow="SOMETIMES">
+                <VBox.margin>
+                    <Insets bottom="10.0" left="25.0" right="25.0" top="10.0"/>
+                </VBox.margin>
+                <Label text="Maximale Anzahl Mauern (in Prozent)" VBox.vgrow="SOMETIMES">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" top="10.0"/>
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="25.0" right="25.0" top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <Slider fx:id="sliderWalls" blockIncrement="5.0" majorTickUnit="10.0" minorTickCount="1"
+                        showTickLabels="true" showTickMarks="true" snapToTicks="true"
+                        VBox.vgrow="SOMETIMES">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="25.0" right="25.0" top="10.0"/>
+                    </VBox.margin>
+                </Slider>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="601.0" style="-fx-border-color: black;"
+                  VBox.vgrow="SOMETIMES">
+                <VBox.margin>
+                    <Insets bottom="10.0" left="25.0" right="25.0" top="10.0"/>
+                </VBox.margin>
+                <Label text="Überlaufmodus aktivieren?" VBox.vgrow="SOMETIMES">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="25.0" right="25.0" top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <CheckBox fx:id="checkBoxOverflow" mnemonicParsing="false" VBox.vgrow="SOMETIMES">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="25.0" right="25.0" top="10.0"/>
+                    </VBox.margin>
+                </CheckBox>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="SOMETIMES">
+                <Button mnemonicParsing="false" onAction="#startGame" text="Spiel starten"
+                        VBox.vgrow="SOMETIMES">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="50.0"/>
+                    </VBox.margin>
+                </Button>
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>
